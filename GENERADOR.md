@@ -17,7 +17,8 @@ Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
 
 ## Estados en Notion
 
-- **Borrador**: generada por el sistema o pendiente de algo (captura, cifra). No se programa.
+- **Borrador**: generada por el sistema o pendiente de algo (captura, cifra). No se programa. Es lo que el fundador revisa.
+- **Replantear**: el fundador quiere cambios; el qué está en el campo «Feedback».
 - **Aprobada**: el fundador la ha dado por buena. Se programa en Buffer en su fecha.
 - **Programada**: ya está en Buffer (campo «Buffer ID» relleno).
 - **Publicada**: Buffer la ha enviado.
@@ -34,13 +35,24 @@ Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
    - Asset: Tarjeta/Pantalla → `{image:{url, metadata:{altText: <frase de la tarjeta>}}}`. Carrusel → `{document:{url: <pdf>, title: <gancho corto>, thumbnailUrl: <png página 01>}}`. **Toda pieza lleva visual**: si una pieza antigua tiene Formato = Texto, generarle una tarjeta con su frase más recordable y publicarla como Tarjeta.
    - Guardar «Buffer ID» y pasar Estado a «Programada».
    - Límite del plan gratuito: **10 posts programados a la vez**. No superar 9; si se llega, parar y esperar al día siguiente.
-4. **Lunes: generar la semana siguiente.** Solo los lunes:
+4. **Replantear (cada día).** Para cada pieza en «Replantear»: reescribirla siguiendo «Feedback» (y el cerebro de contenido), regenerar su visual si cambia la frase, guardar el texto nuevo en el cuerpo de la página, mover el texto anterior a un bloque «Versión anterior» al final, vaciar «Feedback» y devolverla a «Borrador». Si tiene draft en Buffer, actualizarlo con `edit_post` (llevando texto y assets completos). En el informe, listar las piezas replanteadas para que el fundador las vuelva a mirar.
+5. **Reciclaje (a partir de enero de 2027, lunes).** Si una pieza publicada hace más de 10 semanas está entre el 20 % con más interacción (métricas de Buffer), proponer una versión nueva —mismo argumento, otro gancho y otro visual— como Borrador con Origen = Backlog.
+6. **Lunes: generar la semana siguiente.** Solo los lunes:
    - Leer el cerebro de contenido completo (tesis, límites, voz, pilares, casos) y la página «Notas de la semana» (lo nuevo desde el lunes anterior).
    - Contar las piezas Aprobadas/Programadas de la semana que empieza en 7 días (lunes a viernes). Si hay menos de 5, generar las que falten como **Borrador**, una por día laborable sin pieza.
    - Cada pieza nueva: respetar la mezcla de pilares de la sección 7 (nunca dos seguidas del mismo pilar; Construido al menos cada dos días), una tesis de la sección 3, los límites de la sección 4 y la voz de la sección 5 (120–220 palabras, gancho en dos líneas, sin emojis, máximo 3 hashtags, siempre #IAaplicada). Priorizar lo que venga de las notas del fundador (Origen = Nota de voz).
    - Rellenar en Notion: Gancho, Fecha, Pilar, Formato, Tesis, Origen, «Cifras a confirmar» si introduce una cifra no listada en la biblioteca de casos, y el texto completo en el cuerpo de la página. Si es Pantalla, marcar «Falta captura».
-   - Crear también un **borrador en Buffer** (`saveToDraft: true`, mismo canal y `dueAt`) para que el fundador lo revise desde la app; guardar su «Buffer ID». Cuando el fundador lo apruebe en Buffer o cambie el Estado en Notion a «Aprobada», el paso 3 de días siguientes lo programa (si el borrador ya existe en Buffer, editarlo con `edit_post` en vez de crear otro).
-5. **Informe.** Terminar con un mensaje corto: qué se ha programado (fecha · gancho), qué borradores hay para revisar, qué falta (capturas, cifras).
+   - Crear también un **borrador en Buffer** (`saveToDraft: true`, mismo canal y `dueAt`) para que el fundador lo revise desde la app; guardar su «Buffer ID». Cuando el fundador cambie el Estado en Notion a «Aprobada», el paso 3 de días siguientes lo programa (si el borrador ya existe en Buffer, editarlo con `edit_post` en vez de crear otro).
+7. **Informe.** Terminar con un mensaje corto: qué se ha programado (fecha · gancho), qué borradores hay para revisar, qué falta (capturas, cifras).
+
+## Cómo revisa el fundador (desde el móvil, app de Notion)
+
+Abre la vista «Para revisar» (Estado = Borrador o Replantear) y, en cada pieza:
+- **Aprobar** → Estado = Aprobada. Se programa sola en su fecha.
+- **Replantear** → Estado = Replantear y una línea en «Feedback» («más corto», «quita la cifra», «otro gancho, más combativo»). Al día siguiente vuelve reescrita como Borrador.
+- **Descartar** → Estado = Descartada.
+- **Cambiar fecha** → editar «Fecha».
+Buffer solo ejecuta: el fundador no necesita entrar en Buffer salvo para ver la cola o las métricas.
 
 ## Visuales
 
