@@ -8,4 +8,4 @@ Sistema desasistido de contenido de Branthia para LinkedIn.
 
 Las fuentes de `kit/fonts/` son las de branthia.com (Satoshi, ITF Free Font License; JetBrains Mono, OFL). Este repo es privado; los visuales ya generados se publican en `branthia-visuals` (público) porque Buffer necesita URLs públicas.
 
-Flujo: notas del fundador (Notion) → generador (tarea programada) → base «Contenidos» (Notion) → Buffer (borrador o programado) → LinkedIn página Branthia.
+Flujo: notas del fundador (Notion) → generador (tarea programada) → base «Contenidos» (Notion) → Buffer (borrador o programado) → LinkedIn página Branthia + Instagram branthia_ (espejo).

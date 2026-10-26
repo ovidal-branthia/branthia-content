@@ -11,9 +11,11 @@ Este documento lo lee la tarea programada «Branthia · Contenido LinkedIn» cad
 | Notas del fundador | Notion · página «Notas de la semana» | `40553a78-a1b5-812f-bd55-d9aaaa25c58a` |
 | Kit visual | este repo · `kit/` | `python3 kit/render.py <spec.json> <salida>` |
 | Visuales públicos | repo `ovidal-branthia/branthia-visuals` (público) | URL: `https://raw.githubusercontent.com/ovidal-branthia/branthia-visuals/main/<ruta>` |
-| Publicación | Buffer · organización «My organization» `6adf3e887f3fb615d1e7a63d` | canal LinkedIn página **Branthia** `6adf3ee72f1f5ed648d7ebbc` |
+| Publicación | Buffer · organización «My organization» `6adf3e887f3fb615d1e7a63d` | canal LinkedIn página **Branthia** `6adf3ee72f1f5ed648d7ebbc` · canal Instagram **branthia_** `6adfa4352f1f5ed648ddbade` |
 
-Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
+Nunca publicar en el canal `athria-io` (Athria) ni en ningún perfil personal.
+
+**Instagram es espejo de LinkedIn** mientras no se diferencien contenidos: cada pieza que se programa en LinkedIn se programa también en Instagram el mismo día y a la misma hora, y su ID se guarda en «Buffer ID IG».
 
 ## Estados en Notion
 
@@ -34,8 +36,14 @@ Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
    - Crear el post en Buffer con `create_post`: `channelId` Branthia, `schedulingType: automatic`, `mode: customScheduled`, `dueAt` = Fecha a las **08:45 Europe/Madrid** con su offset (+01:00 en invierno, +02:00 en verano). Texto = cuerpo de la página de Notion tal cual, con saltos de línea.
    - Asset: Tarjeta/Pantalla → `{image:{url, metadata:{altText: <frase de la tarjeta>}}}`. Carrusel → `{document:{url: <pdf>, title: <gancho corto>, thumbnailUrl: <png página 01>}}`. **Toda pieza lleva visual**: si una pieza antigua tiene Formato = Texto, generarle una tarjeta con su frase más recordable y publicarla como Tarjeta.
    - Guardar «Buffer ID» y pasar Estado a «Programada».
-   - Límite del plan gratuito: **10 posts programados a la vez**. No superar 9; si se llega, parar y esperar al día siguiente.
-4. **Replantear (cada día).** Para cada pieza en «Replantear»: reescribirla siguiendo «Feedback» (y el cerebro de contenido), regenerar su visual si cambia la frase, guardar el texto nuevo en el cuerpo de la página, mover el texto anterior a un bloque «Versión anterior» al final, vaciar «Feedback» y devolverla a «Borrador». Si tiene draft en Buffer, actualizarlo con `edit_post` (llevando texto y assets completos). En el informe, listar las piezas replanteadas para que el fundador las vuelva a mirar.
+   - **Espejo en Instagram** (canal `6adfa4352f1f5ed648ddbade`), mismo `dueAt`, con `metadata: {instagram: {type: "post", shouldShareToFeed: true}}`. Diferencias con LinkedIn:
+     - Tarjeta/Pantalla → la misma imagen como `{image:{url, metadata:{altText}}}`.
+     - Carrusel → Instagram no acepta PDF: una imagen por página, en orden, con las URLs `<id>-carrusel-01.png`, `-02.png`… (todas deben estar subidas en `branthia-visuals`; el render ya las genera). Máximo 10 páginas.
+     - Texto → el mismo, cambiando «el carrusel…» por «Desliza…», quitando enlaces (no son clicables) y añadiendo al final `#InteligenciaArtificial #Branthia` (máximo 5 hashtags en total).
+     - Guardar el ID en «Buffer ID IG». Si Instagram falla, la pieza sigue «Programada» en LinkedIn y se avisa en el informe.
+   - En el paso 2, una pieza pasa a «Publicada» cuando su post de LinkedIn está `sent`; si el de Instagram da error, avisar.
+   - Límite del plan gratuito: **10 posts programados a la vez por canal**. No superar 9 en ningún canal; si se llega, parar y esperar al día siguiente.
+4. **Replantear (cada día).** Para cada pieza en «Replantear»: reescribirla siguiendo «Feedback» (y el cerebro de contenido), regenerar su visual si cambia la frase, guardar el texto nuevo en el cuerpo de la página, mover el texto anterior a un bloque «Versión anterior» al final, vaciar «Feedback» y devolverla a «Borrador». Si tiene draft en Buffer (LinkedIn o Instagram), actualizarlo con `edit_post` (llevando texto y assets completos). En el informe, listar las piezas replanteadas para que el fundador las vuelva a mirar.
 5. **Reciclaje (a partir de enero de 2027, lunes).** Si una pieza publicada hace más de 10 semanas está entre el 20 % con más interacción (métricas de Buffer), proponer una versión nueva —mismo argumento, otro gancho y otro visual— como Borrador con Origen = Backlog.
 6. **Lunes: generar la semana siguiente.** Solo los lunes:
    - Leer el cerebro de contenido completo (tesis, límites, voz, pilares, casos) y la página «Notas de la semana» (lo nuevo desde el lunes anterior).
@@ -62,7 +70,7 @@ Buffer solo ejecuta: el fundador no necesita entrar en Buffer salvo para ver la 
 - Tarjeta: la frase más recordable del post, ≤ 70 caracteres, con la segunda mitad envuelta en `<q>…</q>` (sale en gris). Método y portadas de carrusel: `"dark": true`.
 - Pantalla: descargar el archivo de «Captura» (Notion `get_file_download_urls`), guardarlo en `/tmp` y pasarlo como `img`.
 - Render: `python3 kit/render.py spec.json out/`. Revisar el PNG resultante (abrirlo) antes de subirlo: texto cortado o desbordado → reducir la frase.
-- Subida: copiar a `branthia-visuals/AAAA/MM/<id>-<tipo>.png|pdf` (y `-carrusel-01.png` como miniatura), commit y push a `main`.
+- Subida: copiar a `branthia-visuals/AAAA/MM/<id>-<tipo>.png|pdf` y, en carruseles, **todas** las páginas `-carrusel-NN.png` (la 01 es la miniatura de LinkedIn; todas forman el carrusel de Instagram). Commit y push a `main`.
 
 ## Reglas que no se rompen
 
