@@ -74,6 +74,13 @@ Buffer solo ejecuta: el fundador no necesita entrar en Buffer salvo para ver la 
 - Render: `python3 kit/render.py spec.json out/`. Revisar el PNG resultante (abrirlo) antes de subirlo: texto cortado o desbordado → reducir la frase.
 - Subida: copiar a `branthia-visuals/AAAA/MM/<id>-<tipo>.png|pdf` y, en carruseles, **todas** las páginas `-carrusel-NN.png` (la 01 es la miniatura de LinkedIn; todas forman el carrusel de Instagram). Commit y push a `main`.
 
+## Sincronizar imágenes con la web de revisión
+
+La web de revisión solo puede mostrar imágenes publicadas junto a ella (no carga imágenes de GitHub). Cada vez que se suban PNG nuevos a `branthia-visuals` (generación del lunes, replanteos, carruseles):
+1. Leer el artifact con la herramienta Artifact (`action: "read"`, url `https://claude.ai/artifact/TsNhPdj9Sf594eJLLh7p3a`).
+2. Publicarlo de nuevo con `url` = ese artifact, `file_path` = `branthia-content/revision/revision.html`, `root` = carpeta del clon de `branthia-visuals`, y `files` = solo los PNG nuevos, con la forma `{"v/AAAA/MM/<fichero>.png": "AAAA/MM/<fichero>.png"}`. Los ficheros ya publicados se conservan. No pasar `capabilities` ni `icon`.
+3. Si la herramienta Artifact no está disponible o falla, indicarlo en el informe: «imágenes nuevas pendientes de sincronizar con la web».
+
 ## Reglas que no se rompen
 
 - No publicar nada que no esté en Estado «Aprobada» (los borradores van a Buffer solo como draft).
