@@ -31,7 +31,7 @@ Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
    - Si Formato = Pantalla y no hay archivo en «Captura» → saltar y avisar («falta captura de la pieza X»).
    - Generar el visual si aplica (ver «Visuales»), subirlo a `branthia-visuals` y guardar «Visual URL».
    - Crear el post en Buffer con `create_post`: `channelId` Branthia, `schedulingType: automatic`, `mode: customScheduled`, `dueAt` = Fecha a las **08:45 Europe/Madrid** con su offset (+01:00 en invierno, +02:00 en verano). Texto = cuerpo de la página de Notion tal cual, con saltos de línea.
-   - Asset: Tarjeta/Pantalla → `{image:{url, metadata:{altText: <frase de la tarjeta>}}}`. Carrusel → `{document:{url: <pdf>, title: <gancho corto>, thumbnailUrl: <png página 01>}}`. Texto → sin assets.
+   - Asset: Tarjeta/Pantalla → `{image:{url, metadata:{altText: <frase de la tarjeta>}}}`. Carrusel → `{document:{url: <pdf>, title: <gancho corto>, thumbnailUrl: <png página 01>}}`. **Toda pieza lleva visual**: si una pieza antigua tiene Formato = Texto, generarle una tarjeta con su frase más recordable y publicarla como Tarjeta.
    - Guardar «Buffer ID» y pasar Estado a «Programada».
    - Límite del plan gratuito: **10 posts programados a la vez**. No superar 9; si se llega, parar y esperar al día siguiente.
 4. **Lunes: generar la semana siguiente.** Solo los lunes:
@@ -44,6 +44,7 @@ Nunca publicar en los canales `oshcarvidal` (perfil) ni `athria-io` (Athria).
 
 ## Visuales
 
+- **Regla: en la página de Branthia toda pieza lleva visual** (tarjeta, carrusel o pantalla). Nunca se genera Formato = Texto.
 - Especificación: JSON como en `piezas/*.json` (tipos `tarjeta`, `carrusel`, `pantalla`). Las piezas del plan inicial ya tienen su spec en `piezas/`; «Spec visual» en Notion indica el fichero y el id.
 - Piezas nuevas: escribir su spec en `piezas/AAAA-MM-DD.json` y hacer commit.
 - Tarjeta: la frase más recordable del post, ≤ 70 caracteres, con la segunda mitad envuelta en `<q>…</q>` (sale en gris). Método y portadas de carrusel: `"dark": true`.

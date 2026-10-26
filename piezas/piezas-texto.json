@@ -1,0 +1,9 @@
+[
+  {"id": "03", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 03", "quote": "Un CRM en 5 minutos es una demo. <q>No un sistema.</q>"},
+  {"id": "08", "tipo": "tarjeta", "section": "§ V", "label": "Trayectoria", "meta": "MMXXVI — 08", "quote": "No nos impresiona una demo. <q>Nos impresiona el día 200.</q>", "dark": true},
+  {"id": "10", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 10", "quote": "El cómo es de la IA. <q>El qué y el juicio, nuestros.</q>"},
+  {"id": "12", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 12", "quote": "A medida ya no es caro <q>por diseño.</q>", "dark": true},
+  {"id": "15", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 15", "quote": "Menos modelo. <q>Más proceso.</q>", "dark": true},
+  {"id": "17", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 17", "quote": "La IA destruye trabajo operativo. <q>Y sube de nivel el criterio.</q>"},
+  {"id": "20", "tipo": "tarjeta", "section": "§ IV", "label": "IA por área", "meta": "MMXXVI — 20", "quote": "El retorno no está en el departamento. <q>Está en el proceso.</q>"}
+]
