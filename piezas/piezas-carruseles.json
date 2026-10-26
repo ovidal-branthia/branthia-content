@@ -1,0 +1,27 @@
+[
+  {"id": "07", "tipo": "carrusel", "section": "§ I", "label": "Construido", "pages": [
+    {"kind": "cover", "text": "Primero replicar. <q>Luego diferenciar.</q>", "sub": "Cómo estamos construyendo un PRM desde cero con agentes."},
+    {"kind": "point", "n": "01", "title": "Qué es Cohexia", "body": "Gestión de partners, distribuidores y resellers. <b>En beta privada.</b>"},
+    {"kind": "point", "n": "02", "title": "Lo que el mercado da por hecho", "body": "Onboarding, registro de oportunidades, fondos de marketing, comisiones. <b>Si falta uno, no hay conversación.</b>"},
+    {"kind": "point", "n": "03", "title": "Especificación antes que código", "body": "Cada funcionalidad descrita con detalle. <b>Los agentes construyen sobre eso,</b> no sobre una idea vaga."},
+    {"kind": "point", "n": "04", "title": "Semanas, no trimestres", "body": "La base funcional, construida con agentes y validada flujo a flujo."},
+    {"kind": "point", "n": "05", "title": "La diferencia viene del dominio", "body": "Canal en dos niveles, facturación de MSP, renovaciones. <b>Lo hemos vivido:</b> canal al 40 % de las ventas."},
+    {"kind": "end", "text": "Estudio de producto. <q>Lo que vendemos, lo construimos.</q>", "sub": "hola@branthia.com"}
+  ]},
+  {"id": "14", "tipo": "carrusel", "section": "§ IV", "label": "IA por área", "pages": [
+    {"kind": "cover", "text": "Este post lo ha escrito <q>un sistema.</q>", "sub": "Con nuestra voz, nuestras tesis y una nota de voz de tres minutos."},
+    {"kind": "point", "n": "01", "title": "Una fuente única", "body": "Posicionamiento, tesis, límites y guía visual <b>en un solo documento.</b>"},
+    {"kind": "point", "n": "02", "title": "Una nota de voz a la semana", "body": "Qué hemos construido, qué ha fallado. <b>La materia prima que ninguna IA tiene.</b>"},
+    {"kind": "point", "n": "03", "title": "Un agente que redacta y diseña", "body": "Borradores con una tesis detrás y <b>el visual ya maquetado.</b>"},
+    {"kind": "point", "n": "04", "title": "Aprobación en 30 segundos", "body": "Desde el móvil: publicar, cambiar o descartar. <b>Nada sale sin pasar por ahí.</b>"},
+    {"kind": "end", "text": "Contenido a escala. <q>Con tu voz, no con la nuestra.</q>", "sub": "hola@branthia.com"}
+  ]},
+  {"id": "18", "tipo": "carrusel", "section": "§ V", "label": "Trayectoria", "pages": [
+    {"kind": "cover", "text": "Cambiaron las herramientas. <q>No cambió lo que aguanta.</q>", "sub": "Tres lecciones de 25 años en grandes marcas que siguen valiendo con agentes."},
+    {"kind": "point", "n": "01", "title": "Sin responsable, no hay sistema", "body": "Un CRM industrial no falló por la tecnología. <b>Falló donde nadie era dueño del proceso.</b>"},
+    {"kind": "point", "n": "02", "title": "El dato manda", "body": "En marketing automation bancario, media obra fue gobernar el dato. <b>Un agente sobre dato sucio miente con fluidez.</b>"},
+    {"kind": "point", "n": "03", "title": "Gana lo que entra en el flujo", "body": "En supply chain se adoptó lo que cabía en el día a día del planificador, <b>no lo más inteligente.</b>"},
+    {"kind": "point", "n": "04", "title": "Qué sí ha cambiado", "body": "El coste de construir se ha desplomado y la interfaz es el lenguaje. <b>Lo demás, igual.</b>"},
+    {"kind": "end", "text": "25 años antes <q>de que se llamara IA.</q>", "sub": "hola@branthia.com"}
+  ]}
+]

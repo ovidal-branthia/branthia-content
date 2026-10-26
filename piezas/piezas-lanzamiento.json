@@ -1,0 +1,16 @@
+[
+  {"id": "01", "tipo": "tarjeta", "section": "§ I", "label": "Criterio", "meta": "MMXXVI — 01", "quote": "La IA que no llega a producción <q>no existe.</q>", "sub": "Consultora de IA aplicada y estudio de producto. <b>25 años</b> poniendo sistemas en producción."},
+  {"id": "06", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 06", "quote": "La IA no ha dejado a los juniors sin trabajo. <q>Los ha dejado sin filtro.</q>"},
+  {"id": "09", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 09", "quote": "Sin coste por tarea no tienes un sistema. <q>Tienes un juguete.</q>", "dark": true},
+  {"id": "13", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 13", "quote": "Un éxito no es <q>un mercado.</q>"},
+  {"id": "16", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 16", "quote": "El CRM desaparece. <q>El agente será la interfaz.</q>"},
+  {"id": "19", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 19", "quote": "Despacio en el criterio. <q>Rápido en la construcción.</q>", "dark": true},
+  {"id": "04", "tipo": "carrusel", "section": "§ III", "label": "Método", "pages": [
+    {"kind": "cover", "text": "Un piloto sin responsable es <q>una demo con presupuesto.</q>", "sub": "Cuatro preguntas antes de arrancar cualquier piloto de IA."},
+    {"kind": "point", "n": "01", "title": "¿Qué proceso real toca desde el primer día?", "body": "Datos reales, no de ejemplo. Un proceso que <b>alguien ejecuta hoy a mano.</b>"},
+    {"kind": "point", "n": "02", "title": "¿Quién es el responsable y lo ha pedido?", "body": "Un dueño del proceso con nombre. Sin él, <b>nadie lo defenderá</b> cuando toque conectarlo."},
+    {"kind": "point", "n": "03", "title": "¿Qué número tiene que moverse?", "body": "Horas, errores, coste por tarea. <b>Uno.</b> Sin número no hay éxito que medir."},
+    {"kind": "point", "n": "04", "title": "¿Qué pasa el día que se equivoca?", "body": "Quién lo ve, cómo se para, cómo se corrige. <b>Sin validación no es un sistema.</b>"},
+    {"kind": "end", "text": "Del comité de dirección <q>a producción.</q>", "sub": "hola@branthia.com"}
+  ]}
+]
