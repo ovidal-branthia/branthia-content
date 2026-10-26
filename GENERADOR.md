@@ -30,7 +30,7 @@ Nunca publicar en el canal `athria-io` (Athria) ni en ningún perfil personal.
 
 1. **Preparar entorno.** Clonar `branthia-content` y `branthia-visuals` (shallow). Playwright y Chromium ya están instalados.
 2. **Sincronizar con Buffer.** Para cada pieza «Programada», consultar su post en Buffer; si `status = sent`, pasarla a «Publicada» y guardar la URL si la hay. Si `status = error`, dejarla en «Programada» y avisar.
-3. **Programar lo aprobado de los próximos 7 días.** Piezas con Estado = Aprobada, Fecha entre hoy y hoy+7, sin «Buffer ID»:
+3. **Programar lo aprobado de los próximos 7 días.** Piezas con Estado = Aprobada y Fecha entre hoy y hoy+7 que no estén ya programadas. Si la pieza ya tiene «Buffer ID» / «Buffer ID IG» y ese post está en borrador en Buffer (`status: draft`), no crear otro: programarlo con `edit_post` (`mode: customScheduled`, `dueAt` de su Fecha, reenviando texto actual de Notion, assets y metadata). Si no tiene ID, crearlo:
    - Si Formato = Pantalla y no hay archivo en «Captura» → saltar y avisar («falta captura de la pieza X»).
    - Generar el visual si aplica (ver «Visuales»), subirlo a `branthia-visuals` y guardar «Visual URL».
    - Crear el post en Buffer con `create_post`: `channelId` Branthia, `schedulingType: automatic`, `mode: customScheduled`, `dueAt` = Fecha a las **08:45 Europe/Madrid** con su offset (+01:00 en invierno, +02:00 en verano). Texto = cuerpo de la página de Notion tal cual, con saltos de línea.
