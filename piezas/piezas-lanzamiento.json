@@ -1,6 +1,6 @@
 [
   {"id": "01", "tipo": "tarjeta", "section": "§ I", "label": "Criterio", "meta": "MMXXVI — 01", "quote": "La IA que no llega a producción <q>no existe.</q>", "sub": "Consultora de IA aplicada y estudio de producto. <b>25 años</b> poniendo sistemas en producción."},
-  {"id": "06", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 06", "quote": "A los juniors no les falta trabajo. <q>Les falta criterio.</q>"},
+  {"id": "06", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 06", "quote": "La IA no deja a los juniors sin trabajo. <q>Les pide experiencia.</q>"},
   {"id": "09", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 09", "quote": "Sin coste por tarea no tienes un sistema. <q>Tienes un juguete.</q>", "dark": true},
   {"id": "13", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 13", "quote": "Un éxito no es <q>un mercado.</q>"},
   {"id": "16", "tipo": "tarjeta", "section": "§ II", "label": "Criterio", "meta": "MMXXVI — 16", "quote": "El CRM desaparece. <q>El agente será la interfaz.</q>"},
