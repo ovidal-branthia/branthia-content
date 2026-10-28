@@ -1,7 +1,7 @@
 [
   {"id": "07", "tipo": "carrusel", "section": "§ I", "label": "Construido", "pages": [
-    {"kind": "cover", "text": "Un PRM no se elige por su lista. <q>Se elige por su canal.</q>", "sub": "Por dónde empezamos a construir Cohexia, nuestro PRM."},
-    {"kind": "point", "n": "01", "title": "Qué es Cohexia", "body": "Gestión de partners, distribuidores y resellers. <b>En beta privada.</b>"},
+    {"kind": "cover", "text": "Un PRM no se elige por su lista. <q>Se elige por su canal.</q>", "sub": "Cohexia, nuestro PRM, ya construido y en beta."},
+    {"kind": "point", "n": "01", "title": "Qué es Cohexia", "body": "Gestión de partners, distribuidores y resellers. <b>Ya construido, en beta privada.</b>"},
     {"kind": "point", "n": "02", "title": "La lista se da por hecha", "body": "Onboarding, oportunidades, fondos de marketing, comisiones. <b>Con agentes, semanas, no trimestres.</b>"},
     {"kind": "point", "n": "03", "title": "Qué partner genera ingresos", "body": "No cuántos partners tienes. <b>Cuáles venden de verdad.</b>"},
     {"kind": "point", "n": "04", "title": "Comisiones que cuadran", "body": "Calculadas sobre lo facturado, <b>no sobre una hoja aparte.</b>"},
