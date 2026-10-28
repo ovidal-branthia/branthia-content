@@ -71,6 +71,7 @@ Buffer solo ejecuta: el fundador no necesita entrar en Buffer salvo para ver la 
 ## Visuales
 
 - **Regla: en la página de Branthia toda pieza lleva visual** (tarjeta, carrusel o pantalla). Nunca se genera Formato = Texto.
+- **Ninguna pieza se queda sin visual, ni siquiera en Borrador.** Si una pieza de Pantalla no tiene captura, generar ya una tarjeta provisional con la frase de su «Spec visual» (sin cifras pendientes de confirmar), subirla y guardarla en «Visual URL» para que el fundador la vea en la web de revisión. Cuando llegue la captura, la pantalla enmarcada la sustituye.
 - Especificación: JSON como en `piezas/*.json` (tipos `tarjeta`, `carrusel`, `pantalla`). Las piezas del plan inicial ya tienen su spec en `piezas/`; «Spec visual» en Notion indica el fichero y el id.
 - Piezas nuevas: escribir su spec en `piezas/AAAA-MM-DD.json` y hacer commit.
 - Tarjeta: la frase más recordable del post, ≤ 70 caracteres, con la segunda mitad envuelta en `<q>…</q>` (sale en gris). Método y portadas de carrusel: `"dark": true`.
