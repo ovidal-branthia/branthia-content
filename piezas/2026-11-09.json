@@ -1,4 +1,20 @@
 [
-  {"id": "21", "tipo": "tarjeta", "section": "Athria", "label": "Parser de normativas", "meta": "Producción · 2026", "quote": "Un documento escrito para personas. <q>Un dato listo para el sistema.</q>", "sub": "Caso real en <b>Athria</b>, nuestro software de gestión de clubes de atletismo."},
-  {"id": "22", "tipo": "tarjeta", "section": "§ III", "label": "Método", "meta": "MMXXVI — 22", "quote": "No-code o código no se elige antes. <q>Se elige mirando el proceso.</q>", "dark": true}
+  {
+    "id": "21",
+    "tipo": "tarjeta",
+    "section": "Athria",
+    "label": "Parser de normativas",
+    "meta": "Producción · 2026",
+    "quote": "Decenas de páginas de normativa. <q>Nadie las teclea.</q>",
+    "sub": "Caso real en <b>Athria</b>, nuestro software de gestión de clubes de atletismo."
+  },
+  {
+    "id": "22",
+    "tipo": "tarjeta",
+    "section": "§ III",
+    "label": "Método",
+    "meta": "MMXXVI — 22",
+    "quote": "No-code o código no se elige antes. <q>Se elige mirando el proceso.</q>",
+    "dark": true
+  }
 ]
